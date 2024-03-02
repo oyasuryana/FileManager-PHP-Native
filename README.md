@@ -3,8 +3,8 @@ APlikasi ini merupakan aplikasi FIle Manager, tidak menggunakan database seluruh
 
 # Default User
 | Username | Password |
------------------------
-| admin     | 123     |    
+| ---------| -------- |
+| admin    | 123      |    
 
 # Screenshoot
 1. Hompage
