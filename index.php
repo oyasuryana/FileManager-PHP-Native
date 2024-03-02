@@ -36,9 +36,12 @@ session_start();
 				Hasil Pekerjaan
 			  </a>
 			  <ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="index.php?page=MyOB"><i class="fa fa-file-archive-o"></i> MyOB</a></li>
-				<li><a class="dropdown-item" href="index.php?page=Spreadsheet"><i class="fa fa-file-excel-o"></i> Spreadsheet</a></li>
-			  </ul>
+        <?php
+        foreach($mapel as $key=>$value){
+        ?>  
+				<li><a class="dropdown-item" href="index.php?page=listDir&name=<?=$value;?>"><i class="fa fa-file-archive-o"></i> <?=$value;?></a></li>
+			  <?php } ?>
+        </ul>
 			</li>
           <li class="nav-item">
 			<?php if(!isset($_SESSION['isLogin'])){ ?>

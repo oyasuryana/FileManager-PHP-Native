@@ -18,17 +18,21 @@
 		<div class="col">
 			<label for="kelas" class="form-label fw-bold">Kelas</label>
 			<select class="form-control"  name="opsiKelas" id="kelas" placeholder="Pilih kelas" required autocomplete="off">
-			  <option value="XII-AKL-1">XII-AKL-1</option>
-			  <option value="XII-AKL-2">XII-AKL-2</option>
-			  <option value="XII-AKL-3">XII-AKL-3</option>
-			  <option value="XII-AKL-4">XII-AKL-4</option>
+			<?php
+			foreach($kelas as $key=>$namaKelas){
+				echo '<option value="'.$namaKelas.'">'.$namaKelas.'</option>';	
+			}
+			?>
 			</select>
 		</div>
 		  <div class="col">
 		  <label for="listPekerjaan" class="form-label fw-bold">Jenis Pekerjaan</label>
 			<select class="form-control"  name="opsiPekerjaan" id="pekerjaan"  placeholder="Pilih jenis pekerjaan" required autocomplete="off">
-			  <option value="MyOB">MyOB</option>
-			  <option value="Spreadsheet">Spreadsheet (Microsoft Excel)</option>
+			<?php
+			foreach($mapel as $key=>$namaMapel){
+				echo '<option value="'.$namaMapel.'">'.$namaMapel.'</option>';	
+			}
+			?>
 			</select>
 		  </div>
 	  </div>
