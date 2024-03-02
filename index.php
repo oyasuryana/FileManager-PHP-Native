@@ -22,7 +22,7 @@ session_start();
   <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">UKK AKL</a>
+      <a class="navbar-brand" href="#">FileManager</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,6 +47,7 @@ session_start();
 				<a class="nav-link active" href="index.php?page=logout">Logout </a>			
 			<?php } ?>
           </li>
+            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#myModal">About</a>
 
         </ul>
 
@@ -75,21 +76,34 @@ session_start();
 				
 			echo '<div class="alert alert-info">'.$_GET['pesan'].'</div>';
 		}
-
-/*
-			$directory_1 = 'MyOB/';
-			$files1 = scandir($directory_1);
-		
-			$directory_2 = 'Spreadsheet/';
-			$files2 = scandir($directory_2);
-			
-			echo 'MyOB '.(count($files1)-2).' File<br/>';	
-			echo 'Spreadsheet '.(count($files2)-2).' File<br/>';	
-*/
 		
 	} ?>
   </div>
 </main>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">About</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3>FileManager v.01</h3>
+		<p>Created By Oya Suryana, S.E.,M.Kom.</p>
+		<p>&copy; 2024</p>
+		<p><a href="https://github.com/oyasuryana/FileManager-PHP-Native"  target="_blank">https://github.com/oyasuryana/FileManager-PHP-Native</a></p>
+		<p>Visit my blog <a href="https://pojok-programmer.com"  target="_blank">https://pojok-programmer.com</a></p>
+		<p>Visit my YT <a href="https://youtube.com/pojok-programmer" target="_blank">@pojok-programmer</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+<!--        <button type="button" class="btn btn-primary">Ok</button>-->
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer class="footer mt-auto py-3 bg-body-tertiary">
   <div class="container">
@@ -105,6 +119,9 @@ session_start();
                 $(this).remove();
             });
         }, 4000);
+		
+		
+		
     });    
 </script>
     </body>
