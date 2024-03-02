@@ -69,8 +69,11 @@ session_start();
 		<p>Aplikasi ini digunakan untuk mengirim hasil pekerjaan Uji Kompetensi Keahlian AKuntansi dan Keuangan Lembaga tahun <?=(date('Y')-1).'/'.date('Y');?>
 		<p>File yang harus dikirimkan :</p>
 		<ol>
-			<li>File MyOB</li>
-			<li>File MS Excel</li>
+    <?php
+        foreach($mapel as $key=>$value){
+        ?>  
+			<li>File <?=$value;?></li>
+      <?php } ?>
 		</ol>
 		<p>Untuk melihat hasil pekerjaan silahkan cek di menu <em>Daftar Hasil Pekerjaan</em>.</p>	
 		<p><a href="index.php?page=upload" class="btn btn-primary btn-lg"><i class="fa fa-cloud-upload"></i> Upload File Disini</a></p>	

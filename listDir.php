@@ -16,7 +16,7 @@ if (is_dir($mapel)){
  
 			 echo $file=='.' || $file=='..' ? null :'
 			 <div class="col-md-3">
-			 <div class="card mb-3 bg-warning text-white">
+			 <div class="card mb-3 bg-danger text-white">
 				<div class="card-body">
 				<a href="index.php?page=dir&name='.$mapel.'/'.$file.'" style="text-decoration:none;color:white"><h3><i class="fa fa-folder-o"></i>  '.$file.'</a></h3>
 				<p><em>Terdapat <strong>'.(count($files)-2).'</strong> file hasil pekerjaan yang telah terkumpul.</em></p>
