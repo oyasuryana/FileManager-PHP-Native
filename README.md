@@ -6,6 +6,11 @@ APlikasi ini merupakan aplikasi FIle Manager, tidak menggunakan database seluruh
 | ---------| -------- |
 | admin    | 123      |    
 
+# Seting
+* Untuk mengganti nama Mata Pelajaran dan Kelas silahkan edit seting pada file init.php
+* Untuk merubah username dan  password admin ganti pada bagian $user dan $pas di file init.php dengan menggunakan Fungsi MD5 untuk meng-encrypt password 
+<img width="347" alt="PHP_FILE_MANAGER_5" src="https://github.com/oyasuryana/FileManager-PHP-Native/assets/40240886/e8f2c8a8-608a-41e0-9e2a-d71bd0490583">
+
 # Screenshoot
 1. Hompage
 <img width="949" alt="PHP_FILE_MANAGER" src="https://github.com/oyasuryana/FileManager-PHP-Native/assets/40240886/5ba1fc8e-ed23-4321-9315-e7ab144502c0">
